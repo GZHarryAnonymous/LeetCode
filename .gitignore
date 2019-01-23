@@ -1,2 +1,4 @@
+# ignore .class
 /bin/
-.md
+# ignore .md
+*.md
