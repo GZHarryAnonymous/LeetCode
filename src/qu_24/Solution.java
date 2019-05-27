@@ -1,8 +1,6 @@
 package qu_24;
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
+import java.util.*;
+
 public class Solution {
 	/**
 	 * Definition for singly-linked list.
@@ -23,8 +21,27 @@ public class Solution {
 	
 	public static void main(String args[]) {
 		Solution s = new Solution();
-		int result=0;
-		System.out.println(result);
+		Scanner sc =  new Scanner(System.in);
+		int  tmp;
+		ListNode head;
+		System.out.println("please input the number:");
+		if((tmp=sc.nextInt())!=-1){
+			ListNode node = new ListNode(tmp);
+			head = node;
+			while((tmp=sc.nextInt())!=-1){
+				node.next = new ListNode(tmp);
+				node = node.next;
+			}
+			s.swapPairs(head);
+			while(head!=null){
+				System.out.println(head.val);
+				head=head.next;
+			}
+
+		}else{
+			System.out.println("Your input is ended!");
+		}
+
 	}
 }
 /*相关说明：
