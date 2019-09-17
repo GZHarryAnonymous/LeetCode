@@ -1,5 +1,6 @@
 package algorithm_per_kind.backtracking;
 public class backTrack8 {
+    //回溯的非递归问题？
 	public static void main(String args[]){
         int[] num = {1,2,3};
         boolean[] tag=new boolean[num.length];
